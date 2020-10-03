@@ -11,7 +11,7 @@ function Ball(x, y, xVel, yVel, size, color) {
     this.move = function() {
         this.y += this.yVel;
         this.x += this.xVel;
-        this.yVel += 0.5;
+        this.yVel += 1.5;
         this.xVel /= 1.01;
         if (this.y > windowHeight - this.size / 2 && this.bounces < 2) {
             this.yVel = this.yVel / -1.5;
